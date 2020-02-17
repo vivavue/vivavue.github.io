@@ -1,0 +1,49 @@
+.homesect.section_8
+    padding-top: 80px
+    .forms
+        background-color: #dddddd
+        border-color: #828282
+        h4
+            color: #2c3949
+        p 
+            color: #5e6267
+        input
+            background-color: #c0c0c0
+            color: #333
+
+.s8-left
+    .section-head
+        margin-bottom: 50px
+        h2 
+            margin-top: 0
+            text-align: left
+            line-height: em(12)
+            &:after
+                transform: none
+                left: 0
+        p 
+            text-align: left
+            
+.s8-items
+    margin-bottom: 20px
+    .s8-item
+        transition: all .5s ease
+        opacity: 0
+        transform: translateY(-25px)
+        text-align: center
+        &.on
+            opacity: 1
+            transform: translateY(0)
+        &:hover
+            transform: translateY(-10px)
+        .img-wrap
+            height: 72px
+            img 
+                height: 72px
+                width: auto
+        p 
+            font-family: "Raleway", sans-serif
+            font-weight: bold
+            font-size: 13px
+            line-height: em(19) 
+            margin-top: 18px

@@ -1,0 +1,36 @@
+#callback
+    max-width: 340px
+    margin: auto
+    position: relative
+    h4 
+        font-size: em(30)
+        font-family: Roboto, sans-serif
+        line-height: em(18)
+        margin-bottom: 18px
+
+.mfp-forms
+	.forms
+		background-color: rgba(36, 51, 67, 1)
+		box-shadow: 0 0 18px rgba(0,0,0,.5), 0 0 0 5px #243343
+		border: none
+		border-radius: 1px
+	&.mfp-wrap
+		&.mfp-ready
+			opacity: 1
+	.mfp-close
+		color: #fff
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.25s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0

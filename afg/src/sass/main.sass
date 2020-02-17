@@ -1,0 +1,99 @@
+@import 'mixins'
+@import 'vars'
+@import 'fonts'
+
+* 
+	box-sizing: border-box
+	
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+//Custom Styles Here
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: em(22)
+	font-family: 'RalewayBold', sans-serif
+	font-weight: normal
+	overflow-x: hidden
+
+
+*::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3)
+	box-shadow: inset 0 0 1px rgba(0,0,0,0.3)
+	background-color: #F5F5F5
+
+*::-webkit-scrollbar
+	width: 3px
+	background-color: #F5F5F5
+
+*::-webkit-scrollbar-thumb
+	background-color: #394b5f
+	border: 2px solid #555555
+
+.headers
+	font-family: 'PFCentroSlabProMedium', "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif
+	text-transform: uppercase
+	font-weight: normal
+	color: $headers-color
+
+a, a:hover, a:focus, a:active
+	color: $main-color
+	text-decoration: underline
+
+h1, h2, h3, h4, h5, h6 
+	@extend .headers
+	line-height: em(22)
+
+h1 
+	font-size: em(48)
+
+h2 
+	font-size: em(30)
+
+h3 
+	
+	font-size: em(24)
+
+b, strong 
+	font-family: 'Raleway', sans-serif
+	
+.img-wrap
+	img 
+		width: 100%
+		max-width: 100%
+@import 'header'
+@import 'sections/section_1'
+@import 'sections/section_2'
+@import 'sections/section_3'
+@import 'sections/section_4'
+@import 'sections/section_5'
+@import 'sections/section_6'
+@import 'sections/section_7'
+@import 'sections/section_8'
+@import 'footer'
+@import 'top'
+@import 'modal'
+@import 'preloader'
+@import "media"

@@ -1,0 +1,32 @@
+.teams
+    @extend .cards
+    .team
+        &-on 
+            opacity: 1
+        &-off 
+            transform: rotateY(100deg)
+            opacity: 0
+        .card-icon
+            overflow: hidden
+            line-height: 0
+            box-shadow: 0 0 0 5px #d6d6d6
+            img 
+                width: 100%
+        @extend .card
+        background-color: #e5e5e5
+        border-color: #d6d6d6
+        h4 
+            color: #333333
+            text-transform: none
+            font-size: em(18)
+            white-space: nowrap
+            margin: 35px 0 10px
+        p 
+            font-size: em(15)
+            color: #6e7b8b
+        .team-phone
+            margin-top: 20px
+            a 
+                color: #333333
+                text-decoration: none
+                font: bold em(18) "Roboto", sans-serif

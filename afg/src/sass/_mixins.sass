@@ -1,0 +1,16 @@
+=font-face($family, $path, $svg, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}.eot')
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+$browser-context: 16
+
+@function em($pixels, $context: $browser-context) 
+  @if (unitless($pixels)) 
+    $pixels: $pixels * 1px
+  @if (unitless($context)) 
+    $context: $context * 1px
+  @return $pixels / $context * 1em

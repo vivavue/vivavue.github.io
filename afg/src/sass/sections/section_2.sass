@@ -1,0 +1,57 @@
+.section_2
+    .section-head 
+        a 
+            text-decoration: none
+
+.s2-items
+    padding-bottom: 20px
+    .s2-item
+        text-align: center
+        color: #111
+        margin-bottom: 75px
+        display: block
+        > span 
+            display: block
+        &-text 
+            font: bold 13px/18px "Raleway", sans-serif
+            text-decoration: underline
+            transition: all .5s ease
+            &:hover
+                text-decoration: none
+                color: $main-color
+    .img-wrap
+        display: block
+        margin-bottom: 12px
+        padding-bottom: 32px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            height: 1px
+            background-color: $main-color
+            width: 58px
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+        img 
+            max-width: 75px
+            height: 60px
+            width: auto
+
+.s2-items-container
+    text-align: center
+
+.s2-item-wrap
+    display: inline-block
+    vertical-align: top
+    float: none
+    padding: 0 15px
+    width: 185px
+    transition: all .5s ease
+    opacity: 0
+    transform: translateY(-25px)
+    &.on
+        opacity: 1
+        transform: translateY(0)
+    &:hover
+        transform: translateY(-10px)
