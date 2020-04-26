@@ -3,7 +3,7 @@ $(function() {
 	var $menu = $('#my-menu').mmenu({
 		extensions: [ 'theme-black', 'effect-menu-slide', 'pagedim-black', "position-right" ],
 		navbar: {
-			title: '<img src="img/logo.jpg" alt="logo">'
+			title: ''
 		}
 	});
 
