@@ -1,29 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: PFCentroSlabProRegular;
-    src: url(../fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.eot);
-    src: url(../fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.woff) format("woff"), url(../fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.ttf) format("truetype"), url(../fonts/PFCentroSlabProRegular/PFCentroSlabProRegular.svg#PFCentroSlabProRegular) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: PFCentroSlabProBold;
-    src: url(../fonts/PFCentroSlabProBold/PFCentroSlabProBold.eot);
-    src: url(../fonts/PFCentroSlabProBold/PFCentroSlabProBold.eot?#iefix) format("embedded-opentype"), url(../fonts/PFCentroSlabProBold/PFCentroSlabProBold.woff) format("woff"), url(../fonts/PFCentroSlabProBold/PFCentroSlabProBold.ttf) format("truetype"), url(../fonts/PFCentroSlabProBold/PFCentroSlabProBold.svg#PFCentroSlabProBold) format("svg");
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: PFCentroSlabProMedium;
-    src: url(../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.eot);
-    src: url(../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.eot?#iefix) format("embedded-opentype"), url(../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.woff) format("woff"), url(../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.ttf) format("truetype"), url(../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.svg#PFCentroSlabProMedium) format("svg");
-    font-weight: "500";
-    font-style: normal
-}
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -93,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: PFCentroSlabProMedium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Roboto;
     text-transform: uppercase;
     font-weight: 400;
     color: #2c3949
@@ -104,7 +80,7 @@ a:active,
 a:focus,
 a:hover {
     color: #f39f18;
-    text-decoration: underline
+    text-decoration: none
 }
 
 h1,
@@ -214,7 +190,8 @@ strong {
 .main-menu a {
     text-decoration: none;
     color: #fff;
-    position: relative
+    position: relative;
+    font-size: 15px;
 }
 
 .main-menu a:after {
@@ -404,7 +381,6 @@ strong {
 
 .forms h4 {
     color: #fff;
-    font-family: PFCentroSlabProMedium;
     font-size: 2.0625em;
     text-transform: none;
     margin: 0
@@ -502,7 +478,6 @@ strong {
     background-color: #f39f18;
     color: #111;
     font-size: 1.375em;
-    font-family: PFCentroSlabProBold;
     padding: 12px 30px;
     border-bottom: 3px solid #b97200;
     -webkit-transition: .5s;
@@ -1047,7 +1022,6 @@ strong {
 
 .triangles-container {
     color: #fff;
-    font-family: PFCentroSlabProMedium, sans-serif;
     font-size: 1.1875em;
     margin: 20px 0 70px;
     text-align: center
@@ -1072,7 +1046,7 @@ strong {
 }
 
 .triangles-container .tc-item:first-child .tc-content {
-    margin-left: 50px
+    margin-left: 30px
 }
 
 .triangles-container .tc-item:hover {
@@ -1117,7 +1091,7 @@ strong {
 .triangles-container .tc-item .tc-content span {
     font-size: 1.25em;
     position: absolute;
-    margin-left: -22px
+    margin-left: -26px
 }
 
 .triangles-container .tc-item .tc-content img {
